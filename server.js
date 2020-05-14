@@ -27,7 +27,6 @@ app.get('/api/timestamp', (req, res) => {
   });
 });
 
-// your first API endpoint...
 app.get('/api/timestamp/:date_str', function (req, res) {
   const { date_str } = req.params;
 
@@ -47,10 +46,6 @@ app.get('/api/timestamp/:date_str', function (req, res) {
       utc: date.toUTCString(),
     });
   }
-
-  // if(date !==)
-
-  // res.json({greeting: 'hello API'});
 });
 
 // listen for requests :)
